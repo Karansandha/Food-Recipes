@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "265061343005",
+    "project_id": "cooking-recipe-appdync11",
+    "storage_bucket": "cooking-recipe-appdync11.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:265061343005:android:e0d754506bcf7f8acf8bf4",
+        "android_client_info": {
+          "package_name": "com.example.cookingrecipe_appdync"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8Kh1oUZWJhpar8JDq8WmZNxu9ANBLcOo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

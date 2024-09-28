@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">CookingRecipe_Appdync</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="create_your_account">Create your account</string>
+    <string name="do_you_have_an_account_signup">Do you have an account?  <u>Sign up</u></string>
+    <string name="already_have_an_account_login">Already have an account?  <u>Login</u></string>
+    <string name="splashscreen">splashscreen</string>
+    <string name="helloworld">Hello World!</string>
+    <string name="signout">signout</string>
+    <string name="welcomeback">Welcome Back</string>
+    <string name="loginintoyouraccount">Login to your account</string>
+
+
+</resources>
