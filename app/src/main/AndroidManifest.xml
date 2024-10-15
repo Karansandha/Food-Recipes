@@ -3,6 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
 
     <application
         android:allowBackup="true"
@@ -14,7 +18,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CookingRecipe_Appdync"
         tools:targetApi="31">
-
+        <activity
+            android:name=".UserlistActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Recipeitem"
+            android:exported="false" />
+        <activity
+            android:name=".AddRecipeActivity"
+            android:exported="false"
+            android:theme="@style/Theme.CookingRecipe_Appdync" />
+        <activity
+            android:name=".ForgotActivity"
+            android:exported="false" />
         <activity
             android:name=".SplashscreenActivity"
             android:exported="true"

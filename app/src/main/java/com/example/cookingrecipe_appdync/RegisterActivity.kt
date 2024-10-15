@@ -21,39 +21,51 @@ class RegisterActivity : AppCompatActivity() {
 
         binding = ActivityRegisterBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        supportActionBar?.title = "Register"
+        supportActionBar?.title = "Register Activity"
 
         binding.login.setOnClickListener {
             startActivity(Intent(this, LoginActivity::class.java))
             finish()
-
         }
 
-        binding.submit.setOnClickListener{
+        binding.submit.setOnClickListener {
             val email = binding.email.text.toString()
             val password = binding.password.text.toString()
-            if(email.isNotEmpty() && password.isNotEmpty())
-            {
-                RegisterActivity.auth.createUserWithEmailAndPassword(email,password).addOnCompleteListener{
-                    if(it.isSuccessful){
-                        startActivity(Intent(this,LoginActivity::class.java))
-                        finish()
-                        val text = "Register Successfully"
-                        val duration = Toast.LENGTH_SHORT
+            val confrmpass = binding.confirmpassword.text.toString()
+            if (email.isNotEmpty() && password.isNotEmpty() && confrmpass.isNotEmpty()) {
+                if (password == confrmpass) {
+                    RegisterActivity.auth.createUserWithEmailAndPassword(email, password).addOnCompleteListener {
+                            if (it.isSuccessful) {
+                                startActivity(Intent(this, LoginActivity::class.java))
+                                finish()
+                                val text = "Register Successfully"
+                                val duration = Toast.LENGTH_LONG
 
-                        val toast = Toast.makeText(this, text, duration)
-                        toast.show()
+                                val toast = Toast.makeText(this, text, duration)
+                                toast.show()
 
-                    }
 
-                }.addOnFailureListener{
-                    Toast.makeText(this,it.localizedMessage, Toast.LENGTH_LONG).show()
+                            }
+                            else {
+                                Toast.makeText(this, "Email is already registered.", Toast.LENGTH_LONG)
+                                    .show()
+                            }
+                        }
+                } else {
+                    Toast.makeText(this, "Passwords do not match", Toast.LENGTH_LONG).show()
                 }
+            }
+        else
+        {
+            Toast.makeText(this, "Empty fields are not allowed  ", Toast.LENGTH_LONG).show()
+        }
+
+            }
             }
         }
 
 
-    }
-}
+
+
 
 

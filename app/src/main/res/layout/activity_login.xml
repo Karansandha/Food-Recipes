@@ -19,7 +19,7 @@
         android:layout_marginTop="2dp"
         android:fontFamily="@font/interbold"
         android:textSize="30sp"
-        android:textColor="@color/textbrown"/>
+        android:textColor="@color/brown"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -29,7 +29,7 @@
             android:layout_marginTop="0dp"
             android:fontFamily="@font/interregular"
             android:textSize="14sp"
-            android:textColor="@color/textbrown"/>
+            android:textColor="@color/brown"/>
 
 
 
@@ -48,8 +48,9 @@
             android:hint="@string/email"
             android:inputType="textEmailAddress"
             android:padding="20dp"
-            android:textColorHint="@color/textbrown"
-            android:textSize="17sp">
+            android:textColor="@color/black"
+            android:textColorHint="@color/brown"
+            android:textSize="14sp">
 
         </EditText>
 
@@ -67,25 +68,36 @@
             android:hint="@string/password"
             android:inputType="textPassword"
             android:padding="20dp"
-            android:textColorHint="@color/textbrown"
-            android:textSize="17sp">
+            android:textColorHint="@color/brown"
+            android:textColor="@color/black"
+            android:textSize="14sp">
 
         </EditText>
 
+    <TextView
+        android:id="@+id/forgotpassword"
+        android:fontFamily="@font/interregular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/forgotpassword"
+        android:layout_marginTop="12dp"
+        android:textSize="14sp"
+        android:textColor="@color/brown" />
+
         <Button
-            android:id="@+id/login"
+            android:id="@+id/loginBtn"
             android:layout_width="250dp"
             android:fontFamily="@font/interbold"
             android:layout_height="wrap_content"
-            android:background="@drawable/round_button"
+            android:backgroundTint="@color/brown"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="20dp"
-            android:textColor="@color/white"
-            android:backgroundTint="@color/textbrown"
+            android:layout_marginTop="12dp"
             android:textColorHint="@color/white"
             android:alpha="0.60"
             android:hint="@string/login"
-            android:textSize="20sp"
+            android:textSize="16sp"
             />
 
         <TextView
@@ -97,6 +109,6 @@
             android:text="@string/do_you_have_an_account_signup"
             android:layout_marginTop="12dp"
             android:textSize="14sp"
-            android:textColor="@color/textbrown" />
+            android:textColor="@color/brown" />
 
     </LinearLayout>

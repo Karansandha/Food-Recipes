@@ -1,37 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@color/purple_200"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/userdetails"
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/logginuser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/interbold"
+            android:text="@string/userloginshow"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            app:drawableStartCompat="@drawable/circleuser_icon" />
+
+        <Button
+            android:id="@+id/logout"
+            style="@style/Widget.MaterialComponents.Button.Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@android:color/holo_orange_light"
+            android:hint="@string/logout"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="17sp"
+            app:icon="@drawable/baseline_logout_24" />
+
+
+    </RelativeLayout>
+
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addrecipe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/register"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="0dp"
-        android:fontFamily="@font/interbold"
-        android:textSize="30sp"
-        android:textColor="@color/textbrown"/>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/navigationbgcolor"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/baseline_add_24"
+        />
 
-    <Button
-        android:id="@+id/signout"
-        android:fontFamily="@font/interregular"
-        android:layout_width="wrap_content"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recipeListfetch"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="@string/signout"
-        android:layout_marginTop="120dp"
-        android:background="@drawable/round_button"
-        android:backgroundTint="@color/rippleforbutton"
-        android:textSize="12sp"
-        android:textAllCaps="true"
-        android:textColor="@color/white" />
+        app:layout_constraintBottom_toTopOf="@+id/addrecipe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout2"
+        app:layout_constraintVertical_bias="0.1"
+        tools:listitem="@layout/recipeitem"/>
 
-</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

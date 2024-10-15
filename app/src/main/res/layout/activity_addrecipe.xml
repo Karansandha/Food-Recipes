@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:elevation="6dp"
+    tools:context=".RegisterActivity">
+
+    <Button
+        android:id="@+id/backtoactivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/navigationbgcolor"
+        android:hint="@string/backtoactivity"
+        android:textColor="@color/white"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        android:textColorHint="@color/white"
+        android:textSize="17sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/addrecipes"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/interbold"
+            android:textSize="20sp"
+            android:alpha="0.60"
+            android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/sharerecipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/navigationbgcolor"
+        android:hint="@string/shareyourrecipe"
+        android:textColor="@color/white"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        android:textColorHint="@color/white"
+        android:textSize="17sp" />
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardMaxElevation="0dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <ImageView
+                android:id="@+id/addrecipe"
+                android:layout_width="match_parent"
+                android:layout_height="316dp"
+                android:alpha="0.60"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/recipefefaultimage" />
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    <EditText
+        android:id="@+id/recipeName"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="420dp"
+        android:autofillHints=""
+        android:background="@drawable/edit_textborder"
+        android:fontFamily="@font/interregular"
+        android:gravity="top"
+        android:hint="@string/giveyourrecipetitle"
+        android:inputType="text"
+        android:padding="17dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/brown"
+        android:textSize="14sp"/>
+
+    <EditText
+        android:id="@+id/recipeDescription"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="490dp"
+        android:autofillHints=""
+        android:background="@drawable/edit_textborder"
+        android:fontFamily="@font/interregular"
+        android:hint="@string/giverecipedescription"
+        android:inputType="textMultiLine"
+        android:lines="8"
+        android:minLines="6"
+        android:gravity="top|start"
+        android:padding="17dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/brown"
+        android:textSize="14sp"/>
+
+    <EditText
+        android:id="@+id/recipeingredients"
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="610dp"
+        android:autofillHints=""
+        android:background="@drawable/edit_textborder"
+        android:fontFamily="@font/interregular"
+        android:hint="@string/giveyourrecipeingredients"
+        android:inputType="textMultiLine"
+        android:lines="8"
+        android:minLines="6"
+        android:gravity="top|start"
+        android:padding="17dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/brown"
+        android:textSize="14sp"/>
+
+
+
+
+
+</RelativeLayout>

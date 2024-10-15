@@ -5,12 +5,16 @@
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
-    <color name="black">#FF000000</color>
+    <color name="black">#2d2d2d</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="textbrown">#210909</color>
+    <color name="brown">#210909</color>
+    <color name="border">#00000019</color>
     <color name="textfiledbackgroundcolor">#F3ECEC</color>
     <color name="registerbuttonbrown">#210909</color>
     <color name="rippleforbutton">#583636</color>
     <color name="rippleforedittextfield">#fffde7</color>
+    <color name="navigationbgcolor">#FAB500</color>
+
+
 
 </resources>

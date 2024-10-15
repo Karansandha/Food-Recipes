@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">CookingRecipe_Appdync</string>
+    <string name="app_name">Food Recipe</string>
     <string name="title_activity_login">LoginActivity</string>
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
@@ -20,9 +20,32 @@
     <string name="already_have_an_account_login">Already have an account?  <u>Login</u></string>
     <string name="splashscreen">splashscreen</string>
     <string name="helloworld">Hello World!</string>
-    <string name="signout">signout</string>
+    <string name="logout">logout</string>
     <string name="welcomeback">Welcome Back</string>
     <string name="loginintoyouraccount">Login to your account</string>
+    <string name="confirmpassword">Confirm Password</string>
+    <string name="forgotpassword"><u>forgot password</u></string>
+    <string name="forgotyourpassword">Forgot your password?</string>
+    <string name="forgotpasswordmessage">Please, enter your email address below to set your new password.</string>
+    <string name="resetpassword">Reset Password</string>
+    <string name="back"><u>Go back to login screen</u></string>
+
+
+    <string name="addrecipes">Upload Recipe</string>
+    <string name="giverecipedescription">Description</string>
+    <string name="giveyourrecipecookingtime">Cooking Time</string>
+    <string name="giveyourrecipetitle">Title</string>
+    <string name="giveyourrecipeingredients">Ingredients</string>
+    <string name="shareyourrecipe">Share</string>
+    <string name="recipeimageupload">recipeimageupload</string>
+    <string name="todo">TODO</string>
+    <string name="backtoactivity">Back</string>
+    <string name="userloginshow">UserShow</string>
+    <string name="healthydosa">Healthy Dosa</string>
+    <string name="recipefetchdescription">Description</string>
+    <string name="recipefetchingredients">Ingredients</string>
+    <string name="recipeuploaddate">Date</string>
+    <string name="please_wait">Please Wait...</string>
 
 
 </resources>

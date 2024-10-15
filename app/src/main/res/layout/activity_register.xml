@@ -18,7 +18,7 @@
         android:layout_marginTop="0dp"
         android:fontFamily="@font/interbold"
         android:textSize="30sp"
-        android:textColor="@color/textbrown"/>
+        android:textColor="@color/brown"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -28,7 +28,7 @@
         android:layout_marginTop="2dp"
         android:fontFamily="@font/interregular"
         android:textSize="14sp"
-        android:textColor="@color/textbrown"/>
+        android:textColor="@color/brown"/>
 
 
     <EditText
@@ -44,10 +44,17 @@
         android:hint="@string/email"
         android:inputType="textEmailAddress"
         android:padding="20dp"
-        android:textColorHint="@color/textbrown"
-        android:textSize="17sp">
+        android:textColor="@color/black"
+        android:textColorHint="@color/brown"
+        android:textSize="14sp">
 
     </EditText>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
 
     <EditText
         android:id="@+id/password"
@@ -62,25 +69,45 @@
         android:hint="@string/password"
         android:inputType="textPassword"
         android:padding="20dp"
-        android:textColorHint="@color/textbrown"
-        android:textSize="17sp">
+        android:textColor="@color/black"
+        android:textColorHint="@color/brown"
+        android:textSize="14sp">
 
     </EditText>
+
+        <EditText
+        android:id="@+id/confirmpassword"
+        android:alpha=".60"
+        android:fontFamily="@font/interregular"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_border"
+        android:backgroundTint="@color/textfiledbackgroundcolor"
+        android:hint="@string/confirmpassword"
+        android:inputType="textPassword"
+        android:padding="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/brown"
+        android:textSize="14sp">
+
+    </EditText>
+    </LinearLayout>
 
     <Button
         android:id="@+id/submit"
         android:layout_width="250dp"
         android:fontFamily="@font/interbold"
         android:layout_height="wrap_content"
-        android:background="@drawable/round_button"
+        android:backgroundTint="@color/brown"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:alpha="0.60"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
-        android:textColor="@color/white"
-        android:backgroundTint="@color/textbrown"
         android:textColorHint="@color/white"
-        android:alpha="0.60"
         android:hint="@string/register"
-        android:textSize="20sp"
+        android:textSize="16sp"
         />
 
     <TextView
@@ -92,6 +119,6 @@
         android:text="@string/already_have_an_account_login"
         android:layout_marginTop="12dp"
         android:textSize="14sp"
-        android:textColor="@color/textbrown" />
+        android:textColor="@color/brown" />
 
 </LinearLayout>
